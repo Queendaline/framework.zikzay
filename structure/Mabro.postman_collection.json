@@ -1,0 +1,992 @@
+{
+	"info": {
+		"_postman_id": "2e2e23ea-f9a0-4d72-9475-463c116558e2",
+		"name": "Mabro",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Account",
+			"item": [
+				{
+					"name": "Sing up",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email_address",
+									"value": "welling@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "password",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/mabro/account/create-m",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mabro",
+								"account",
+								"create-m"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sign in",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email_address",
+									"value": "welling@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "password",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/mabro/account/login-m",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mabro",
+								"account",
+								"login-m"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verify Email Address",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/mabro/account/verify-email-code-m",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mabro",
+								"account",
+								"verify-email-code-m"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verify Phone number",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "phone_number",
+									"value": "09138807871",
+									"type": "text"
+								},
+								{
+									"key": "code",
+									"value": "223296",
+									"type": "text"
+								},
+								{
+									"key": "user",
+									"value": "10",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/mabro/account/verifyPhoneCodeM",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mabro",
+								"account",
+								"verifyPhoneCodeM"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Send Phone code",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "phone_number",
+									"value": "09028837747",
+									"type": "text"
+								},
+								{
+									"key": "id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/mabro/account/sendPhoneCodeM",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mabro",
+								"account",
+								"sendPhoneCodeM"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Settings",
+			"item": [
+				{
+					"name": "Update Settings",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "login_email_alert",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/mabro/settings/update-settings",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mabro",
+								"settings",
+								"update-settings"
+							],
+							"query": [
+								{
+									"key": "user",
+									"value": "5",
+									"disabled": true
+								},
+								{
+									"key": "loging",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "General",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/mabro/settings/general",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mabro",
+								"settings",
+								"general"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verify BVN",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "bvn",
+									"value": "299883883",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/mabro/settings/verify-bvn",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mabro",
+								"settings",
+								"verify-bvn"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verify Account number",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "account_number",
+									"value": "2993388999",
+									"type": "text"
+								},
+								{
+									"key": "bank_name",
+									"value": "Access bank",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/mabro/settings/verify-account-number",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mabro",
+								"settings",
+								"verify-account-number"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Lock code",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Paystack banks",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost/mabro/settings/paystack-banks",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mabro",
+								"settings",
+								"paystack-banks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List banks",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost/mabro/settings/banks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mabro",
+								"settings",
+								"banks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Banks",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/mabro/settings/create-banks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mabro",
+								"settings",
+								"create-banks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Bank Account",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "account_number",
+									"value": "3116778786",
+									"type": "text"
+								},
+								{
+									"key": "bank_name",
+									"value": "First bank",
+									"type": "text"
+								},
+								{
+									"key": "bvn",
+									"value": "3116778786",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/mabro/settings/add-account-number",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mabro",
+								"settings",
+								"add-account-number"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Updata security",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/mabro/settings/update-settings",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mabro",
+								"settings",
+								"update-settings"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "fund",
+			"item": [
+				{
+					"name": "Init Monnify",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "amount",
+									"value": "1000",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/mabro/fund-account/monnify",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mabro",
+								"fund-account",
+								"monnify"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VerifyMonnify",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "source_reference",
+									"value": "MNFY|17|20210209120753|001093",
+									"type": "text"
+								},
+								{
+									"key": "user",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "amount",
+									"value": "1000",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/mabro/fund-account/verify-monnify",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mabro",
+								"fund-account",
+								"verify-monnify"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VerifyPaystack",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "source_reference",
+									"value": "pskf8307d0fa1fd8a4e",
+									"type": "text"
+								},
+								{
+									"key": "amount",
+									"value": "100",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/mabro/fund-account/verify-paystack",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mabro",
+								"fund-account",
+								"verify-paystack"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buy data",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "phone_number",
+									"value": "08011111111",
+									"type": "text"
+								},
+								{
+									"key": "data_id",
+									"value": "mtn-10mb-100",
+									"type": "text"
+								},
+								{
+									"key": "network",
+									"value": "mtn",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/mabro/mobile-data/buy",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mabro",
+								"mobile-data",
+								"buy"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Transaction list",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user",
+									"value": "10",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/mabro/account/transactions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mabro",
+								"account",
+								"transactions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Withdraw fund",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user",
+									"value": "10",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/fund-account/withdraw",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"fund-account",
+								"withdraw"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Withdraw details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Bills",
+			"item": [
+				{
+					"name": "Subscribe TV",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "service",
+									"value": "dstv",
+									"type": "text"
+								},
+								{
+									"key": "smart_card_number",
+									"value": "1212121212",
+									"type": "text"
+								},
+								{
+									"key": "bill_code",
+									"value": "dstv-padi",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "09138807871",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/mabro/bill-services/subscribe-tv",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mabro",
+								"bill-services",
+								"subscribe-tv"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buy Airtime",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "network",
+									"value": "mtn",
+									"type": "text"
+								},
+								{
+									"key": "phone_number",
+									"value": "08011111111",
+									"type": "text"
+								},
+								{
+									"key": "amount",
+									"value": "200",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/mabro/airtime/buy",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mabro",
+								"airtime",
+								"buy"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verify Bill Customer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "meter_number",
+									"value": "1212121212",
+									"type": "text"
+								},
+								{
+									"key": "service",
+									"value": "dstv",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "prepaid",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/mabro/bill-services/verify-customer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mabro",
+								"bill-services",
+								"verify-customer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pay Electricity Bill",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List Data Boundles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Airtime to cash details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "BitcoinP2P",
+			"item": [
+				{
+					"name": "Buyer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user",
+									"value": "5\n",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/bitcoin-p-2-p/buyer",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"bitcoin-p-2-p",
+								"buyer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Seller",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user",
+									"value": "5",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/bitcoin-p-2-p/seller",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"bitcoin-p-2-p",
+								"seller"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List buyers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/bitcoin-p-2-p/list-buyers",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"bitcoin-p-2-p",
+								"list-buyers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List Sellers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://iceztech.com/mabro"
+		},
+		{
+			"key": "baseUrl",
+			"value": "http://localhost/mabro",
+			"disabled": true
+		}
+	]
+}

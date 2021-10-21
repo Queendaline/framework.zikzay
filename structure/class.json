@@ -1,0 +1,78 @@
+{
+  "message": null,
+  "status": false,
+  "data": [
+    {
+      "name": "Dinings",
+      "description": "Guest can dining in their room or  make special order",
+      "image": "001204440440.jpg",
+      "active": 1,
+      "created_at": "2020-09-11 07:39:20",
+      "updated_at": "2020-09-17 09:42:04",
+      "id": 3
+    },
+    {
+      "name": "In-Room Service",
+      "description": "Nill",
+      "image": "001204661224.jpg",
+      "active": 1,
+      "created_at": "2020-09-11 07:43:01",
+      "updated_at": "2020-09-11 07:56:13",
+      "id": 4
+    },
+    {
+      "name": "Take a tour",
+      "description": "Nill",
+      "image": "001204727300.jpg",
+      "active": 1,
+      "created_at": "2020-09-11 07:44:07",
+      "updated_at": "2020-09-11 07:56:20",
+      "id": 5
+    },
+    {
+      "name": "Transportation",
+      "description": "Nill",
+      "image": "001204860237.jpg",
+      "active": 1,
+      "created_at": "2020-09-11 07:46:20",
+      "updated_at": "2020-09-11 07:46:20",
+      "id": 6
+    },
+    {
+      "name": "Laundry",
+      "description": "Nill",
+      "image": "001204925486.jpg",
+      "active": 1,
+      "created_at": "2020-09-11 07:47:25",
+      "updated_at": "2020-09-11 07:56:18",
+      "id": 7
+    },
+    {
+      "name": "Management",
+      "description": "Nill",
+      "image": "001205126340.jpg",
+      "active": 1,
+      "created_at": "2020-09-11 07:50:46",
+      "updated_at": "2020-09-11 07:56:24",
+      "id": 8
+    },
+    {
+      "name": "Recreattion",
+      "description": "Nill",
+      "image": "001205381314.jpg",
+      "active": 1,
+      "created_at": "2020-09-11 07:55:01",
+      "updated_at": "2020-09-11 07:55:01",
+      "id": 9
+    },
+    {
+      "name": "Errand Service",
+      "description": "Nill",
+      "image": "001205429240.jpg",
+      "active": 1,
+      "created_at": "2020-09-11 07:55:49",
+      "updated_at": "2020-09-11 07:55:49",
+      "id": 10
+    }
+  ]
+}

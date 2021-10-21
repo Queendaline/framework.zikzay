@@ -1,0 +1,21 @@
+
+    /*
+    SELECT
+    (
+    SELECT
+        PERIOD_DIFF(
+            NOW(),(
+            SELECT
+                created_at
+            FROM
+                zik_addresses
+            WHERE
+                zik_addresses.id = zik_staffs.id
+        ))
+        ) AS period
+    FROM
+        `zik_staffs`
+    */
+//SELECT (SELECT PERIOD_DIFF(NOW(), (SELECT created_at FROM zik_addresses WHERE zik_addresses.id = zik_staffs.id))) AS period FROM `zik_staffs`
+//SELECT DATEDIFF(NOW(), (SELECT created_at FROM zik_staffs WHERE id = 1))
+//SELECT DATE_SUB(NOW(), INTERVAL (SELECT STR_TO_DATE(SELECT created_at FROM zik_staffs WHERE id = 1) SECOND) '%Y-%m-%d %H:%i:s')
