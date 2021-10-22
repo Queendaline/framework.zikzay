@@ -13,6 +13,13 @@ class Migration_211021_111813 extends Migration {
         $this->addColumn("admin", "created_at", "TIMESTAMP  NOT NULL DEFAULT CURRENT_TIMESTAMP");
         $this->addColumn("admin", "updated_at", "TIMESTAMP on update CURRENT_TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP");
 
+        $this->createTable("music", "id", "INT NOT NULL ", " AUTO_INCREMENT");
+        $this->addColumn("music", "name", "VARCHAR(50) NOT NULL ");
+        $this->addColumn("music", "genre", "VARCHAR(25) NOT NULL ");
+        $this->addColumn("music", "musician", "VARCHAR(64) NOT NULL  ");
+        $this->addColumn("music", "uploaded", "INT UNSIGNED NULL ");
+        $this->addColumn("music", "created_at", "TIMESTAMP  NOT NULL DEFAULT CURRENT_TIMESTAMP");
+        $this->addColumn("music", "updated_at", "TIMESTAMP on update CURRENT_TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP");
 
     }
     

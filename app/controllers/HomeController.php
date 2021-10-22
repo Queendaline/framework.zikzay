@@ -99,13 +99,13 @@ class HomeController extends Controller
         // Check if file already exists
         if (file_exists($target_file)) {
             echo "Sorry, file already exists.";
-            $uploadOk = 0;
+            // $uploadOk = 0;
         }
 
         // Check file size
-        if ($_FILES["audio"]["size"] > 500000000000000000) {
+        if ($_FILES["audio"]["size"] > 500000000000000000000000000) {
             echo "Sorry, your file is too large.";
-            $uploadOk = 0;
+            // $uploadOk = 0;
         }
 
         // Allow certain file formats
